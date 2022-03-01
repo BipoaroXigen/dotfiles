@@ -1,0 +1,120 @@
+@define-color base0 #292b2e;
+@define-color base1 rgb(255, 115, 0);
+/* @define-color base1 green; */
+@define-color base2 orangered;
+@define-color base3 whitesmoke;
+
+* {
+	font-size: 16px;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+window#waybar {
+	background: @base0;
+	color: @base4;
+}
+
+#custom-left-arrow-1-0,
+#custom-right-arrow-1-0{
+	font-size: 20px;
+	color: @base1;
+	background: @base0;
+}
+#custom-left-arrow-0-1 {
+	font-size: 20px;
+	color: @base0;
+	background: @base1;
+}
+#custom-left-arrow-0-2 {
+	font-size: 20px;
+	color: @base0;
+	background: @base2;
+}
+#custom-left-arrow-0-0 {
+	font-size: 20px;
+	color: @base0;
+	background: @base0;
+}
+#custom-left-arrow-2-1 {
+	font-size: 20px;
+	color: @base2;
+	background: @base1;
+}
+#custom-left-arrow-1-2 {
+	font-size: 20px;
+	color: @base1;
+	background: @base2;
+}
+
+
+#workspaces {
+	background: @base1;
+	font-weight: bold;
+}
+
+#clock.1,
+#clock.2,
+#clock.3,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#temperature,
+#tray {
+	background: @base1;
+}
+#clock.2 {
+	background: @base0;
+	color: @base1;
+	font-weight: bold;
+}
+#tray {
+	background: @base0;
+}
+
+#workspaces button {
+	padding: 0 2px;
+}
+#workspaces button.focused {
+	color: @base4;
+}
+#workspaces button:hover {	
+	/* color: @base3; */
+	box-shadow: none;
+	text-shadow: none;
+	background: orangered;
+	border-radius: 0;
+	border: orangered;
+	padding: 0 3px;
+}
+
+/* #pulseaudio {
+	color: whitesmoke;
+}
+#memory {
+	color: whitesmoke;
+}
+#cpu {
+	color: whitesmoke;
+}
+#battery {
+	color: whitesmoke;
+}
+#disk {
+	color: whitesmoke;
+}
+#temperature {
+	color: whitesmoke;
+} */
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#temperature,
+#disk,
+#tray {
+	padding: 0 10px;
+}
